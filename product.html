@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สินค้าทั้งหมด — Clean head</title>
+  <meta name="description" content="ยาสระผม Clean head ไซส์เล็ก 30ml และไซส์ใหญ่ 100ml เลือกตามอารมณ์ Fresh หรือ Confident">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ปุ่มกรองที่ script.js สร้าง: เรียงต่อกันเป็นแถว ไม่ให้เต็มความกว้างบนมือถือ */
+    #filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-bottom: var(--space-4);
+    }
+    #filter-bar .btn {
+      width: auto;
+      padding: 0.6rem 1.6rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Clean head</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html" aria-current="page">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h1>สินค้าทั้งหมด</h1>
+          <p>ไซส์เล็ก 30ml พกพาสะดวก เหมาะสำหรับทดลองกลิ่นที่ใช่ และไซส์ใหญ่ 100ml สำหรับใช้งานเป็นประจำทุกวัน</p>
+        </div>
+
+        <div id="filter-bar" role="group" aria-label="กรองตามอารมณ์"></div>
+
+        <div id="product-list" class="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Clean head</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

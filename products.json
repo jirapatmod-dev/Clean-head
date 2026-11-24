@@ -1,0 +1,42 @@
+[
+  {
+    "id": "fresh-30",
+    "name": "ยาสระผม Fresh เล็ก",
+    "mood": "fresh",
+    "type": null,
+    "size": "30ml",
+    "price": 89,
+    "image": "images/fresh.jpg",
+    "description": "ยาสระผมกลิ่น Fresh ขนาดพกพา 30ml เหมาะสำหรับทดลองใช้หรือพกติดกระเป๋าเดินทาง"
+  },
+  {
+    "id": "fresh-100",
+    "name": "ยาสระผม Fresh ใหญ่",
+    "mood": "fresh",
+    "type": null,
+    "size": "100ml",
+    "price": 199,
+    "image": "images/fresh.jpg",
+    "description": "ยาสระผมกลิ่น Fresh ขนาด 100ml สำหรับใช้ประจำที่บ้าน"
+  },
+  {
+    "id": "confident-30",
+    "name": "ยาสระผม Confident เล็ก",
+    "mood": "confident",
+    "type": null,
+    "size": "30ml",
+    "price": 89,
+    "image": "images/confident.jpg",
+    "description": "ยาสระผมกลิ่น Confident ขนาดพกพา 30ml เหมาะสำหรับทดลองใช้หรือพกติดกระเป๋าเดินทาง"
+  },
+  {
+    "id": "confident-100",
+    "name": "ยาสระผม Confident ใหญ่",
+    "mood": "confident",
+    "type": null,
+    "size": "100ml",
+    "price": 199,
+    "image": "images/confident.jpg",
+    "description": "ยาสระผมกลิ่น Confident ขนาด 100ml สำหรับใช้ประจำที่บ้าน"
+  }
+]

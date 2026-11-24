@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clean head — ยาสระผมที่รีเซ็ตความรู้สึกใหม่</title>
+  <meta name="description" content="Clean head รีเซ็ตความรู้สึกใหม่ให้หนังศีรษะสะอาดเบาสบาย พร้อมปลุกความมั่นใจในทุกวันของคุณ">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* สไตล์เฉพาะหน้าแรก (ส่วนที่ style.css กลางยังไม่มี) */
+    .home {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      background: var(--cream);
+      padding: var(--space-6) 0;
+    }
+
+    .hero__title {
+      margin: 0;
+      font-weight: 400;
+    }
+
+    .hero__brand {
+      display: block;
+      font-size: clamp(3.5rem, 11vw, 8rem);
+      line-height: 1;
+      letter-spacing: 0.01em;
+      margin-bottom: var(--space-3);
+    }
+
+    .hero__line {
+      display: block;
+      max-width: 30rem;
+      font-family: var(--font-serif-body);
+      font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+      font-weight: 300;
+      line-height: 1.9;
+      letter-spacing: 0.01em;
+      color: var(--ink-soft);
+    }
+
+    .hero .divider { margin: var(--space-4) 0; }
+
+    .mood-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4);
+    }
+
+    .mood-card {
+      padding: var(--space-4);
+      color: inherit;
+    }
+    .mood-card:hover { color: inherit; }
+
+    .mood-card__cta {
+      align-self: flex-start;
+      margin-top: var(--space-2);
+      font-size: 0.95rem;
+      color: var(--accent-deep);
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 2px;
+    }
+
+    @media (max-width: 48rem) {
+      .mood-grid { grid-template-columns: 1fr; gap: var(--space-3); }
+      .mood-card { padding: var(--space-3); }
+    }
+  </style>
+</head>
+<body class="home">
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Clean head</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html" aria-current="page">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="display:flex;flex-direction:column;flex:1;">
+
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">
+          <span class="hero__brand">Clean head</span>
+          <span class="hero__line">รีเซ็ตความรู้สึกใหม่ให้หนังศีรษะสะอาดเบาสบาย พร้อมปลุกความมั่นใจในทุกวันของคุณ</span>
+        </h1>
+        <hr class="divider">
+        <a class="btn" href="product.html">ดูสินค้าทั้งหมด</a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="mood-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="mood-title">เลือกตามความรู้สึก</h2>
+          <p>เลือกกลิ่นที่ตรงกับอารมณ์ของคุณในวันนี้</p>
+        </div>
+
+        <div class="mood-grid">
+          <a class="card mood-card" data-mood="fresh" href="product.html?mood=fresh">
+            <h3 class="card__title">สดชื่น (Fresh)</h3>
+            <p class="card__desc">ปลุกความตื่นตัวให้ทุกเช้าด้วยสัมผัสที่โปร่งโล่งและเบาสบาย เหมือนได้รีเฟรชหนังศีรษะให้สะอาดหมดจด พร้อมรับวันใหม่อย่างกระปรี้กระเปร่า</p>
+            <span class="mood-card__cta">ดูสินค้า Fresh</span>
+          </a>
+
+          <a class="card mood-card" data-mood="confident" href="product.html?mood=confident">
+            <h3 class="card__title">มั่นใจ (Confident)</h3>
+            <p class="card__desc">เสริมบุคลิกให้ดูดีและน่าเชื่อถือด้วยกลิ่นหอมสะอาดที่ให้ความรู้สึกนิ่ง สุขุม ช่วยให้คุณพร้อมออกไปพบปะผู้คนได้อย่างเต็มความมั่นใจ</p>
+            <span class="mood-card__cta">ดูสินค้า Confident</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Clean head</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
